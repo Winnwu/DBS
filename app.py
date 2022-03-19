@@ -6,7 +6,7 @@
 
 
 from flask import Flask, request, render_template
-
+import joblib
 
 # In[6]:
 
@@ -29,7 +29,7 @@ def index():
     print(s)
     return(render_template("index.html", results=s))
   else:
-    return(render_template("index.html", results="2"))
+    return(render_template("index.html", results="DBS Share Price Prediction"))
 
 
 # In[8]:
